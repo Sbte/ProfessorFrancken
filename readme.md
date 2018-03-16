@@ -3,7 +3,7 @@
 | <a href="https://professorfrancken.nl"><img width="200px" alt="Logo of T.F.V. Professor Francken" src="https://github.com/ProfessorFrancken/ProfessorFrancken/blob/master/public/images/LOGO_KAAL.png"></a> | <h1>T.F.V. 'Professor Francken'</h1> [![Build Status](http://github.scriptcie.nl/api/badges/ProfessorFrancken/ProfessorFrancken/status.svg)](http://github.scriptcie.nl/ProfessorFrancken/ProfessorFrancken) [![Coverage Status](https://coveralls.io/repos/github/ProfessorFrancken/ProfessorFrancken/badge.svg?branch=master)](https://coveralls.io/github/ProfessorFrancken/ProfessorFrancken?branch=master) |
 
 This is the repository containing code for the new website of
-[T.F.V. Porfessor Francken](http://professorfrancken.nl/).
+[T.F.V. Professor Francken](http://professorfrancken.nl/).
 We are using the [Laravel v5.2](http://laravel.com/docs/5.2) framework in
 combination with [Broadway](http://github.com/qandidate-labs/broadway), an
 infrastructure library for creating CQRS and Event Sourced applications.
@@ -173,7 +173,7 @@ acceptance tests, however each class should be unit and integration tested.
 #### Adding projectors
 We use projectors to generate read models. Currently these projectors are placed
 in `App\ReadModels`. Once you've created a projector you should add its Fully
-Qualified Classs Name (FQCN) to the `event_sourcing.php` config file.
+Qualified Class Name (FQCN) to the `event_sourcing.php` config file.
 The application will then automatically call each of the projectors in the
 config file when an event is published.
 
